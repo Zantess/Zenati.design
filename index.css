@@ -234,7 +234,7 @@ header .logo
 
 /* Vidéo responsive */
 
-@media (max-width: auto)
+@media (max-width: 798px)
 {
   .showcase,
   .showcase header
