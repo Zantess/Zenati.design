@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>http://zenatidesign.fr</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <!-- Menu Vitrine -->
+  <section class="showcase">
+    <header>
+      <H2 class="logo">Zenati Design</H2>
+      <div class="toggle"></div>
+    </header>
+
+
+    <!-- Programme Vidéo + Texte Mise en avant -->
+    <div>
+
+      <video src="./Médias Site Vitrine/Video BG.mp4" muted loop autoplay></video>
+
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Mon univers créatif</h2>
+        <h3>« Le design est l’ambassadeur silencieux de votre marque ».</h3>
+        <p>PAUL RAND</p>
+        <!-- Liens Factice Pour le style-->
+        <a href="https://www.behance.net/zenatiprodesign">
+          <h6>Découvrir</h6>
+        </a>
+      </div>
+      <!-- Liens icone reseaux sociaux -->
+      <ul class="social">
+
+        <li><a href="https://www.linkedin.com/in/nessim-zenati-492a371a5/"><img
+              src="https://img.icons8.com/ios-glyphs/60/000000/linkedin-circled--v1.png" /></a></li>
+        <li><a href="https://www.instagram.com/zenatidesignn/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+        </li>
+      </ul>
+
+      <div class="container">
+
+        <div class="rigth-col">
+
+          <p>Listen</p>
+          <audio autoplay loop volumeinitial=0,5 controls style="height: 18px;" src="./Médias Site Vitrine/LAKEY INSPIRED - The Process.mp3"></audio>
+
+        </div>
+
+        <!-- Lecteur HTML -->
+
+        <!-- <audio id="mySong">
+
+          < - The Process.mp3" 
+          type="audio/mp3"></source>source src="./Médias Site Vitrine/LAKEY INSPIRED
+
+        </audio> -->
+
+        <!-- <script>
+          var mySong = document.getElementById("mySong");
+          var icon = document.getElementById("icon");
+          icon.onclik = function () {
+            if(mySong.paused){
+              mySong.play();
+            }
+
+          }
+
+        </script> -->
+        
+  </section>
+
+
+  </ul>
+
+
+
+  <!-- Diapositive ouverte de la classe menu -->
+
+  <div class="menu">
+    <ul>
+      <li><a href="./InterfaceVidéo.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Js toggel -->
+
+    <SCript>
+
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+
+    </SCript>
+
+  </div>
+
+
+</body>
+
+</html>
