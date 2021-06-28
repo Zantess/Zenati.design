@@ -1,0 +1,273 @@
+/* Typo import Sans Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+:root {
+    --overlay-color: #86868686; 
+}
+/* Selecteur de réinitialisation */
+* {
+    /* Ajout d'une box pour éviter  la déformations si ajoue élems */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+/* Vitrine entoule essensiellement tout saud le menu */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    /* vh correspond a la mesure d'une fenêtre */
+    padding: 100px;
+    display: flex;
+    /* flex permet un allignement automatique dans une rangée */
+    justify-content: space-between;
+    /* Space between justifie l'espace entre les elems*/
+    align-items: center;
+    background-color: black;
+    color: white;
+    z-index: 2;
+    /* permet de positionner l'elm toujous devant le menu */
+    transition: 2s;
+}
+
+.showcase.active {
+    
+    right: 300px;
+}
+
+.showcase header {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        /* 40% Haut est bas 100% Gauche Droite */
+        z-index: 1000;
+        /* Donne un index élever pour être sur de sa position haute */
+        display:flex; 
+        align-items: center;
+        justify-content: space-between;
+        /* Justify permet de justifier les elems selont la taille de la page */
+
+    }
+
+    .toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    /* object-fit "cover" permet la supperposition de la vidéo */
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    /* z-index permet la supperposition du texte */
+}
+
+.overlay {
+    /* Supperpositon et retouche teinte */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    /* permet de supperposer un calque de couleurs */
+    mix-blend-mode: overlay;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    /* definition en Maj */
+
+}
+.text h3 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    /* definition en Maj */
+}
+
+.texte p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display:inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* sépare de 2 px */
+    transition: 0.2s;
+}
+.text a:hover {
+    /* effet de mouvement quand on passe le curseur */
+    letter-spacing: 6px;
+}
+
+.social{
+    
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social li {
+    list-style: none;
+}
+.social li a {
+    
+    display: inline-block;
+    filter: invert(1);
+    /* Invers  les couleurs des png fitler invert 1 */
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: ease 0.5s;
+
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+    /* transition: ease 0.5s; */
+}
+
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul 
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: rgb(129, 0, 250); 
+}
+
+
+
+.Input{
+    justify-content: center;
+    z-index: 20;
+}
+
+
+/* Vidéo responsive */
+
+@media (max-width: 798px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+
+}
+
+/* Config SONS Background */
+
+.container{
+  position:absolute;
+}
+
+
+rigth-col p{
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 15px;
+
+}
+
+#icon{
+width: 25px;
+cursor: pointer;
+}
+
